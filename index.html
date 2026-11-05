@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>TNT Propaganda — Agência 360° em Salvador</title>
+  <meta name="description" content="TNT Propaganda: agência 360° em Salvador-BA há mais de 15 anos. Campanhas on e off, marcas e identidade visual, redes sociais, outdoor, vídeos, spots e jingles. Criatividade gera Criatividade." />
+  <meta name="theme-color" content="#0d0195" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="TNT Propaganda — Uma boa ideia acende tudo" />
+  <meta property="og:description" content="Agência 360° em Salvador há mais de 15 anos. Campanhas, marcas, vídeos, spots e jingles. Aqui, as ideias nunca dormem." />
+  <meta property="og:image" content="https://cleysonsegundo.github.io/tnt-site/assets/og-tnt.jpg" />
+  <link rel="icon" href="assets/brand/icon-512.png" />
+  <link rel="apple-touch-icon" href="assets/brand/icon-512.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=League+Spartan:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/img/salvador-noite-1600.webp" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <div class="grain" aria-hidden="true"></div>
+  <canvas class="fx" aria-hidden="true"></canvas>
+
+  <!-- Cursor -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"><b class="cursor__label">Ver</b></span></div>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <a class="header__logo" href="#inicio" aria-label="TNT Propaganda — início">
+      <img src="assets/brand/logo-tnt-branco.png" alt="TNT Propaganda" width="633" height="517" />
+    </a>
+    <nav class="header__nav" aria-label="Principal">
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#insights">Insights</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn--yellow btn--sm header__cta" href="https://wa.me/557536324879" target="_blank" rel="noopener">
+      <span>Fale com a TNT</span><i class="btn__arrow" aria-hidden="true">↗</i>
+    </a>
+    <button class="header__menu" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="sr">Abrir menu</span><i></i><i></i>
+    </button>
+  </header>
+
+  <!-- Barra de progresso e índice lateral (painel de controle) -->
+  <div class="progress" aria-hidden="true"><i></i></div>
+  <nav class="rail" aria-label="Seções">
+    <a href="#sobre" data-label="Quem somos"><b>01</b><i></i></a>
+    <a href="#trabalhos" data-label="Trabalhos"><b>02</b><i></i></a>
+    <a href="#servicos" data-label="O que fazemos"><b>03</b><i></i></a>
+    <a href="#marcas" data-label="Marcas"><b>04</b><i></i></a>
+    <a href="#metodo" data-label="Método"><b>05</b><i></i></a>
+    <a href="#salvador" data-label="Salvador"><b>06</b><i></i></a>
+    <a href="#spot" data-label="Na prática"><b>07</b><i></i></a>
+    <a href="#insights" data-label="Insights"><b>08</b><i></i></a>
+    <a href="#contato" data-label="Contato"><b>09</b><i></i></a>
+    <span class="rail__clock" aria-hidden="true">SSA <b class="js-clock">--:--:--</b></span>
+  </nav>
+
+  <div class="menu" id="menu" hidden>
+    <nav class="menu__nav" aria-label="Menu">
+      <a href="#trabalhos"><small>01</small>Trabalhos</a>
+      <a href="#servicos"><small>02</small>Serviços</a>
+      <a href="#sobre"><small>03</small>Sobre</a>
+      <a href="#insights"><small>04</small>Insights</a>
+      <a href="#contato"><small>05</small>Contato</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="https://wa.me/557536324879" target="_blank" rel="noopener">WhatsApp (75) 3632-4879</a>
+      <a href="https://www.instagram.com/agenciatnt/" target="_blank" rel="noopener">Instagram @agenciatnt</a>
+    </div>
+  </div>
+
+  <main id="conteudo">
+    <!-- ==================== ABERTURA (filme guiado pela rolagem) ==================== -->
+    <section class="film" id="inicio" aria-label="Abertura: do briefing à campanha no ar">
+      <div class="film__pin">
+
+        <!-- Palco onde a campanha aparece no fim: Salvador à noite -->
+        <div class="stage" aria-hidden="true">
+          <div class="stage__photo"><img src="assets/img/salvador-noite-1600.webp" alt="" width="1600" height="1060" /></div>
+          <i class="stage__tint"></i>
+          <svg class="balao stage__ring" viewBox="-5 -5 110 110"><path pathLength="1" d="M0 100V50A50 50 0 0 1 50 0A50 50 0 0 1 100 50A50 50 0 0 1 50 100Z" /></svg>
+          <i class="stage__beam stage__beam--a"></i>
+          <i class="stage__beam stage__beam--b"></i>
+          <i class="stage__floor"></i>
+        </div>
+
+        <!-- Área de trabalho (programa de design) -->
+        <div class="ws" aria-hidden="true">
+          <div class="ws__canvas"><i class="ws__ruler ws__ruler--x"></i><i class="ws__ruler ws__ruler--y"></i></div>
+          <div class="ws__top">
+            <div class="ws__file"><i class="ws__led"></i><b>TNT_Institucional_2026.psd</b><span>4:5 · 1080 × 1350 px · RGB</span></div>
+            <ol class="ws__steps">
+              <li>Briefing</li><li>Foto</li><li>Cor</li><li>Tipografia</li><li>Composição</li><li>Exportação</li>
+            </ol>
+            <div class="ws__meta"><span class="ws__live"><i></i>Equipe TNT online</span><span>Zoom <b class="ws__zoom">66%</b></span></div>
+          </div>
+
+          <aside class="ws__layers">
+            <p class="ws__label">Camadas</p>
+            <ul class="layers">
+              <li data-layer="logo"><i class="lr__ico lr__ico--img"></i><span>Logo TNT</span><i class="lr__eye"></i></li>
+              <li data-layer="handle"><i class="lr__ico lr__ico--t">T</i><span>@agenciatnt</span><i class="lr__eye"></i></li>
+              <li data-layer="sub"><i class="lr__ico lr__ico--t">T</i><span>Assinatura</span><i class="lr__eye"></i></li>
+              <li data-layer="title"><i class="lr__ico lr__ico--t">T</i><span>Título</span><i class="lr__eye"></i></li>
+              <li data-layer="kicker"><i class="lr__ico lr__ico--t">T</i><span>Chamada</span><i class="lr__eye"></i></li>
+              <li data-layer="shade"><i class="lr__ico lr__ico--grad"></i><span>Degradê azul TNT</span><i class="lr__eye"></i></li>
+              <li data-layer="grade"><i class="lr__ico lr__ico--adj"></i><span>Tratamento de cor</span><i class="lr__eye"></i></li>
+              <li data-layer="photo"><i class="lr__ico lr__ico--photo"></i><span>Foto · Salvador à noite</span><i class="lr__eye"></i></li>
+            </ul>
+            <p class="ws__hint"><span class="layers__count">0</span> camadas · 1 prancheta</p>
+          </aside>
+
+          <aside class="ws__props">
+            <p class="ws__label">Propriedades</p>
+            <div class="props">
+              <div class="prop" data-prop="0">
+                <p class="prop__title">Briefing nº 0427</p>
+                <dl class="kv-list">
+                  <div><dt>Cliente</dt><dd>TNT Propaganda</dd></div>
+                  <div><dt>Peça</dt><dd>Campanha institucional</dd></div>
+                  <div><dt>Conceito</dt><dd>“Aqui, as ideias nunca dormem.”</dd></div>
+                  <div><dt>Formatos</dt><dd>Feed · Outdoor · VT · Spot</dd></div>
+                  <div><dt>Prazo</dt><dd>Sexta-feira, 18h</dd></div>
+                </dl>
+              </div>
+              <div class="prop" data-prop="1">
+                <p class="prop__title">Imagem</p>
+                <dl class="kv-list">
+                  <div><dt>Arquivo</dt><dd>Elevador_Lacerda_noite.jpg</dd></div>
+                  <div><dt>Original</dt><dd>4928 × 3264 px</dd></div>
+                  <div><dt>Recorte</dt><dd>4:5 · terços</dd></div>
+                  <div><dt>Escala</dt><dd><b class="num" data-num="scale">130</b>%</dd></div>
+                  <div><dt>Posição X</dt><dd><b class="num" data-num="posx">82</b>%</dd></div>
+                </dl>
+              </div>
+              <div class="prop" data-prop="2">
+                <p class="prop__title">Curvas</p>
+                <svg class="curves" viewBox="0 0 120 120">
+                  <path class="curves__grid" d="M30 0V120M60 0V120M90 0V120M0 30H120M0 60H120M0 90H120" />
+                  <path class="curves__base" d="M0 120L120 0" />
+                  <path class="curves__line" d="M0 120 C40 80 80 40 120 0" />
+                </svg>
+                <dl class="kv-list kv-list--bars">
+                  <div><dt>Exposição</dt><dd><b class="num" data-num="exp" data-dec="2">0.00</b></dd><i style="--v:0"></i></div>
+                  <div><dt>Contraste</dt><dd>+<b class="num" data-num="con">0</b></dd><i style="--v:0"></i></div>
+                  <div><dt>Luzes da cidade</dt><dd>+<b class="num" data-num="tem">0</b></dd><i style="--v:0"></i></div>
+                  <div><dt>Saturação</dt><dd>+<b class="num" data-num="sat">0</b></dd><i style="--v:0"></i></div>
+                </dl>
+              </div>
+              <div class="prop" data-prop="3">
+                <p class="prop__title">Caractere</p>
+                <p class="type-specimen">Aa</p>
+                <dl class="kv-list">
+                  <div><dt>Fonte</dt><dd>League Spartan</dd></div>
+                  <div><dt>Peso</dt><dd>Black 900</dd></div>
+                  <div><dt>Tamanho</dt><dd><b class="num" data-num="size">0</b> pt</dd></div>
+                  <div><dt>Entrelinha</dt><dd>92%</dd></div>
+                  <div><dt>Espaçamento</dt><dd>−45</dd></div>
+                </dl>
+              </div>
+              <div class="prop" data-prop="4">
+                <p class="prop__title">Composição</p>
+                <dl class="kv-list">
+                  <div><dt>Selecionado</dt><dd class="prop__sel">Título</dd></div>
+                  <div><dt>Margens</dt><dd>80 px</dd></div>
+                  <div><dt>Grade</dt><dd>6 colunas · base 40</dd></div>
+                  <div><dt>Contraste</dt><dd>AAA · 12,4:1 ✓</dd></div>
+                  <div><dt>Alinhamento</dt><dd>Esquerda · base</dd></div>
+                </dl>
+              </div>
+              <div class="prop" data-prop="5">
+                <p class="prop__title">Exportar</p>
+                <ul class="exports">
+                  <li><span>Feed 1080 × 1350</span><b>PNG</b><i></i></li>
+                  <li><span>Outdoor 9 × 3 m</span><b>PDF/X</b><i></i></li>
+                  <li><span>VT 30″ · Full HD</span><b>MP4</b><i></i></li>
+                  <li><span>Spot 30″</span><b>WAV</b><i></i></li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+
+          <div class="ws__timeline">
+            <span class="tl__play">▶</span>
+            <span class="tl__tc">00:00:<b class="tl__sec">00</b>:<b class="tl__fr">00</b></span>
+            <div class="tl__track">
+              <i class="tl__fill"></i><i class="tl__head"></i>
+              <span style="--at:0">Briefing</span><span style="--at:.16">Foto</span><span style="--at:.32">Cor</span><span style="--at:.5">Tipo</span><span style="--at:.68">Composição</span><span style="--at:.86">Export</span>
+            </div>
+            <span class="tl__total">00:00:30:00</span>
+          </div>
+        </div>
+
+        <!-- A campanha no mundo -->
+        <div class="world" aria-hidden="true">
+          <div class="bb" data-depth="0.45">
+            <div class="bb__face">
+              <div class="ad">
+                <img class="ad__img" src="assets/img/salvador-noite-1000.webp" alt="" width="1000" height="662" />
+                <i class="ad__shade"></i>
+                <div class="ad__text">
+                  <p class="ad__kicker">Salvador · 24h · 365 dias</p>
+                  <p class="ad__title">Aqui, as ideias<br /><em>nunca dormem.</em></p>
+                </div>
+                <img class="ad__logo" src="assets/brand/logo-tnt-branco.png" alt="" width="633" height="517" />
+              </div>
+              <i class="bb__light"></i>
+            </div>
+            <div class="bb__lamps"><i></i><i></i><i></i></div>
+            <i class="bb__deck"></i>
+            <div class="bb__legs"><i></i><i></i></div>
+          </div>
+
+          <div class="tvset" data-depth="1">
+            <div class="tvset__screen">
+              <img class="tvset__img" src="assets/img/salvador-noite-1000.webp" alt="" width="1000" height="662" />
+              <div class="tvset__lower"><b>TNT Propaganda</b><span>Aqui, as ideias nunca dormem.</span></div>
+              <span class="tvset__rec"><i></i>VT 30″</span>
+              <span class="tvset__tc">00:00:12:08</span>
+              <i class="tvset__scan"></i>
+            </div>
+            <img class="tvset__body" src="assets/img/tv.webp" alt="" width="670" height="515" />
+          </div>
+
+          <div class="radio" data-depth="1.15">
+            <div class="radio__waves"><i></i><i></i><i></i></div>
+            <img src="assets/img/radio.webp" alt="" width="583" height="583" />
+            <span class="radio__tag">Spot · Jingle 30″</span>
+          </div>
+
+          <div class="phone">
+            <i class="phone__spill"></i>
+            <div class="phone__body">
+              <div class="phone__screen">
+                <div class="ig__status"><b>21:47</b><span class="ig__sys"><i></i><i></i><i></i></span></div>
+                <div class="ig__bar">
+                  <b class="ig__brand">Instagram</b>
+                  <span class="ig__icons">
+                    <svg viewBox="0 0 24 24"><path d="M12 20.8 3.6 12.6a5 5 0 0 1 7.1-7.1L12 6.8l1.3-1.3a5 5 0 0 1 7.1 7.1z" /></svg>
+                    <svg viewBox="0 0 24 24"><path d="M21 3 3 10.4l7 2.7 2.7 7zM10 13.1 21 3" /></svg>
+                  </span>
+                </div>
+                <div class="ig__head">
+                  <span class="ig__avatar"><img src="assets/brand/logo-tnt-branco.png" alt="" width="633" height="517" /></span>
+                  <span class="ig__who"><b>agenciatnt</b><small>Salvador, Bahia</small></span>
+                  <span class="ig__more">•••</span>
+                </div>
+                <div class="post__media"></div>
+                <div class="ig__actions">
+                  <svg viewBox="0 0 24 24" class="is-liked"><path d="M12 20.8 3.6 12.6a5 5 0 0 1 7.1-7.1L12 6.8l1.3-1.3a5 5 0 0 1 7.1 7.1z" /></svg>
+                  <svg viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.6-4.4a8.5 8.5 0 1 1 15.4-4.6z" /></svg>
+                  <svg viewBox="0 0 24 24"><path d="M21 3 3 10.4l7 2.7 2.7 7zM10 13.1 21 3" /></svg>
+                  <svg viewBox="0 0 24 24" class="ig__save"><path d="M6 3h12v18l-6-4.5L6 21z" /></svg>
+                </div>
+                <p class="ig__caption"><b>agenciatnt</b> Aqui, as ideias nunca dormem. 💡 Criatividade gera Criatividade. <span>#TNTPropaganda #Salvador</span></p>
+              </div>
+              <i class="phone__island"></i>
+              <i class="phone__glare"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- A arte (prancheta) -->
+        <div class="board-wrap" aria-hidden="true">
+          <div class="board">
+            <div class="kv">
+              <div class="kv__photo">
+                <img class="kv__img kv__img--raw" src="assets/img/salvador-noite-1600.webp" srcset="assets/img/salvador-noite-1000.webp 1000w, assets/img/salvador-noite-1600.webp 1600w, assets/img/salvador-noite-2400.webp 2400w" sizes="(max-width: 900px) 160vw, 1170px" alt="" width="1600" height="1060" />
+                <div class="kv__graded"><img class="kv__img" src="assets/img/salvador-noite-1600.webp" srcset="assets/img/salvador-noite-1000.webp 1000w, assets/img/salvador-noite-1600.webp 1600w, assets/img/salvador-noite-2400.webp 2400w" sizes="(max-width: 900px) 160vw, 1170px" alt="" width="1600" height="1060" /></div>
+              </div>
+              <i class="kv__shade"></i>
+              <div class="kv__content">
+                <i class="kv__bar"></i>
+                <p class="kv__kicker">Salvador · 24 horas · 7 dias · 365 dias</p>
+                <p class="kv__title"><span class="kv__line">Aqui, as ideias</span><span class="kv__line kv__line--y">nunca dormem.</span></p>
+                <p class="kv__sub">Criatividade gera Criatividade.</p>
+                <div class="kv__foot"><span class="kv__handle">@agenciatnt</span><img class="kv__logo" src="assets/brand/logo-tnt-branco.png" alt="" width="633" height="517" /></div>
+              </div>
+            </div>
+            <div class="ov ov--thirds"><i></i><i></i><i></i><i></i></div>
+            <div class="ov ov--crop"><i></i><i></i><i></i><i></i><span>4:5 · 1080 × 1350</span></div>
+            <div class="ov ov--grid"></div>
+            <div class="ov ov--split"><span>Antes</span><span>Depois</span></div>
+            <div class="ov ov--select"><i></i><i></i><i></i><i></i><b>Título</b></div>
+            <svg class="ov ov--cursor" viewBox="0 0 24 24"><path d="M4 2l15 9-6.6 1.6L9.5 20z" /></svg>
+          </div>
+        </div>
+
+        <!-- Briefing (documento) -->
+        <article class="brief" aria-hidden="true">
+          <header><span>Briefing nº 0427</span><span>TNT Propaganda</span></header>
+          <h3>Campanha institucional 2026</h3>
+          <p class="brief__concept">“Aqui, as ideias nunca dormem.”</p>
+          <dl>
+            <div><dt>Objetivo</dt><dd>Mostrar que a TNT cria 24 horas por dia, 7 dias por semana.</dd></div>
+            <div><dt>Público</dt><dd>Empresários e gestores de marketing da Bahia.</dd></div>
+            <div><dt>Tom de voz</dt><dd>Confiante, criativo, baiano.</dd></div>
+            <div><dt>Referência</dt><dd>Salvador à noite, com as luzes acesas.</dd></div>
+            <div><dt>Formatos</dt><dd>Feed 4:5 · Outdoor 9×3 m · VT 30″ · Spot 30″</dd></div>
+          </dl>
+          <footer><span class="brief__check">✓ Aprovado para criação</span><span>Prazo: sexta, 18h</span></footer>
+        </article>
+
+        <div class="toast" aria-hidden="true"><i>✓</i><span><b>Arte aprovada</b>Direção de criação · agora</span></div>
+
+        <!-- Texto final do filme -->
+        <div class="world__copy">
+          <p class="eyebrow">Do briefing à campanha no ar</p>
+          <h2 class="world__title">Uma ideia.<br /><span class="hl">Todos os meios.</span></h2>
+          <p class="world__text">Outdoor, redes sociais, TV e rádio contando a mesma história. É assim que a sua marca fica acesa na mente do consumidor.</p>
+          <div class="world__actions">
+            <a class="btn btn--yellow" href="#trabalhos"><span>Ver trabalhos</span><i class="btn__arrow" aria-hidden="true">→</i></a>
+            <a class="btn btn--line" href="#contato"><span>Fale com a TNT</span></a>
+          </div>
+        </div>
+
+        <!-- Abertura: tudo escuro até alguém apertar o interruptor; aí o letreiro da TNT acende, traço por traço -->
+        <div class="intro">
+          <svg class="balao intro__ring" viewBox="-5 -5 110 110" aria-hidden="true"><path pathLength="1" d="M0 100V50A50 50 0 0 1 50 0A50 50 0 0 1 100 50A50 50 0 0 1 50 100Z" /></svg>
+          <div class="intro__copy">
+            <p class="eyebrow">TNT Propaganda — Agência 360° — Salvador, BA</p>
+            <h1 class="intro__title"><span class="intro__line">Uma boa ideia</span><span class="intro__line"><em>acende tudo.</em></span></h1>
+            <p class="intro__lead">Há mais de 15 anos transformamos minutos em campanhas memoráveis: marcas, campanhas on e off, vídeos, spots e jingles.</p>
+          </div>
+          <p class="intro__cue" aria-hidden="true"><span class="intro__mouse"><i></i></span>Role para entrar na ideia</p>
+          <div class="intro__dark" aria-hidden="true"></div>
+          <div class="intro__neon" aria-hidden="true">
+            <!-- A marca surge no meio do escuro com a lâmpada acesa (o brilho já vem pronto na imagem: nada de filtro ao vivo) -->
+            <i class="intro__halo"></i>
+            <img class="intro__glow" src="assets/brand/lampada-brilho.webp" alt="" width="793" height="677" />
+            <img class="intro__logo" src="assets/brand/logo-tnt-branco.png" alt="" width="633" height="517" />
+          </div>
+          <div class="intro__power">
+            <button class="switch" type="button" aria-pressed="false" data-cursor="Acender">
+              <span class="sr">Acender a luz e entrar no site</span>
+              <span class="switch__plate" aria-hidden="true"><span class="switch__key"><i class="switch__led"></i></span></span>
+            </button>
+            <p class="intro__hint"><span class="intro__hint-mouse">Clique</span><span class="intro__hint-touch">Toque</span> no interruptor para acender a ideia</p>
+          </div>
+        </div>
+        <div class="flash" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- Tarja amarela -->
+    <div class="tape" aria-hidden="true">
+      <div class="tape__row"><span>Campanhas</span><i>✦</i><span>Marcas</span><i>✦</i><span>Redes sociais</span><i>✦</i><span>VTs</span><i>✦</i><span>Spots</span><i>✦</i><span>Jingles</span><i>✦</i><span>Outdoor</span><i>✦</i><span>Encartes</span><i>✦</i><span>Mascotes</span><i>✦</i><span>Campanhas</span><i>✦</i><span>Marcas</span><i>✦</i><span>Redes sociais</span><i>✦</i><span>VTs</span><i>✦</i><span>Spots</span><i>✦</i><span>Jingles</span><i>✦</i><span>Outdoor</span><i>✦</i><span>Encartes</span><i>✦</i><span>Mascotes</span><i>✦</i></div>
+    </div>
+
+    <!-- ==================== QUEM SOMOS ==================== -->
+    <section class="manifesto" id="sobre">
+      <div class="container">
+        <div class="sec-head"><span class="sec-head__n">(01)</span><span>Quem somos</span><i></i></div>
+        <div class="manifesto__grid">
+          <p class="manifesto__text" data-fill>
+            Na publicidade, <em>cada segundo conta.</em> Por isso 15 ou 30 segundos viram spots, jingles e VTs que carregam a mensagem certa — aquela que o cliente do nosso cliente precisa ouvir.
+          </p>
+          <figure class="manifesto__fig" data-tilt>
+            <svg class="balao manifesto__ring" viewBox="-5 -5 110 110" aria-hidden="true" data-draw><path pathLength="1" d="M0 100V50A50 50 0 0 1 50 0A50 50 0 0 1 100 50A50 50 0 0 1 50 100Z" /></svg>
+            <div class="manifesto__img" data-parallax><img src="assets/img/relogio.webp" alt="Relógio de bolso antigo sobre livros" width="626" height="417" loading="lazy" /></div>
+            <figcaption><span>15″ · 30″</span>O tempo é a nossa matéria-prima.</figcaption>
+          </figure>
+        </div>
+        <div class="manifesto__body">
+          <p>Somos uma agência de publicidade, onde cada briefing é uma oportunidade e cada campanha, um verdadeiro laboratório de ideias. Fazemos o dia render 24 horas de verdade: horas produtivas, criativas e inquietas, dedicadas a manter nossos clientes <strong>acesos na mente dos consumidores</strong>.</p>
+          <p>Atentos a cada detalhe, a cada comportamento, a cada nova mania que hoje chamam de <em>trend</em>. Afinal, <strong>Criatividade gera Criatividade.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== NÚMEROS (com WebGL: milhares de partículas formam cada número) ==================== -->
+    <section class="numbers" aria-label="A TNT em números">
+      <div class="numbers__pin">
+        <canvas class="numbers__gl" aria-hidden="true"></canvas>
+        <div class="numbers__hud" aria-hidden="true">
+          <i class="hud-corner hud-corner--tl"></i><i class="hud-corner hud-corner--tr"></i><i class="hud-corner hud-corner--bl"></i><i class="hud-corner hud-corner--br"></i>
+          <span class="numbers__tag">// A TNT em números</span>
+          <span class="numbers__idx"><b>01</b> / 04</span>
+          <span class="numbers__meta"><b>0</b> partículas<span class="numbers__hint"> · passe o mouse</span></span>
+          <span class="numbers__bar"><i></i><i></i><i></i><i></i></span>
+        </div>
+        <div class="container numbers__wrap">
+          <ul class="numbers__list">
+            <li><svg class="balao numbers__shock" viewBox="-5 -5 110 110" aria-hidden="true"><path d="M0 100V50A50 50 0 0 1 50 0A50 50 0 0 1 100 50A50 50 0 0 1 50 100Z" /></svg><b class="numbers__big">+<span data-count="15">15</span></b><span><small>anos de mercado</small> transformando minutos em campanhas memoráveis</span></li>
+            <li><svg class="balao numbers__shock" viewBox="-5 -5 110 110" aria-hidden="true"><path d="M0 100V50A50 50 0 0 1 50 0A50 50 0 0 1 100 50A50 50 0 0 1 50 100Z" /></svg><b class="numbers__big"><span data-count="360">360</span>°</b><span><small>comunicação integrada<span class="numbers__sep">,</span></small> on e off — todas as mídias</span></li>
+            <li><svg class="balao numbers__shock" viewBox="-5 -5 110 110" aria-hidden="true"><path d="M0 100V50A50 50 0 0 1 50 0A50 50 0 0 1 100 50A50 50 0 0 1 50 100Z" /></svg><b class="numbers__big">24/7</b><span><small>ideias que nunca dormem<span class="numbers__sep">,</span></small> 365 dias por ano</span></li>
+            <li class="numbers__extra"><span><small>TNT Propaganda</small> Criatividade gera Criatividade.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TRABALHOS ==================== -->
+    <section class="works" id="trabalhos">
+      <div class="works__pin">
+        <div class="container works__head">
+          <div class="sec-head"><span class="sec-head__n">(02)</span><span>Trabalhos selecionados</span><i></i></div>
+          <h2 class="title" data-explode>Ideias que já estão nas ruas, nas telas e no rádio.</h2>
+          <p class="works__hint"><span class="works__count"><b>01</b> / 13</span><span class="works__how">Role para ver mais →</span></p>
+        </div>
+        <div class="works__floor" aria-hidden="true"><i></i></div>
+        <div class="works__viewport">
+          <div class="works__track">
+            <article class="work work--wide" data-kind="cutout">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/outdoor-max-forte.webp">
+                <i class="work__glow"></i><img src="assets/trabalhos/outdoor-max-forte.webp" alt="Outdoor Grupo Max Forte: Segurança que você confia — 25 anos" width="998" height="509" loading="lazy" /><i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>01</span><h3>Max Forte · 25 anos</h3><p>Outdoor</p></div>
+            </article>
+            <article class="work" data-kind="cutout">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/promo-carrinho-cheio.webp">
+                <i class="work__glow"></i><img src="assets/trabalhos/promo-carrinho-cheio.webp" alt="Promoção Carrinho Cheio &amp; Carrão na Garagem — Hiper Unimar" width="797" height="781" loading="lazy" /><i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>02</span><h3>Carrinho Cheio &amp; Carrão na Garagem</h3><p>Promoção · Hiper Unimar</p></div>
+            </article>
+            <article class="work work--tall" data-kind="cutout">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/mascote-chef.webp">
+                <i class="work__glow"></i><img src="assets/trabalhos/mascote-chef.webp" alt="Mascote 3D: personagem padeiro segurando cesta de pães" width="672" height="810" loading="lazy" /><i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>03</span><h3>Padeiro 3D</h3><p>Mascote</p></div>
+            </article>
+            <article class="work work--tall" data-kind="cutout">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/encarte-sao-joao.webp">
+                <i class="work__glow"></i><img src="assets/trabalhos/encarte-sao-joao.webp" alt="Encarte de ofertas São João — Hiper Unimar" width="561" height="801" loading="lazy" /><i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>04</span><h3>São João de Ofertas</h3><p>Encarte · Hiper Unimar</p></div>
+            </article>
+            <article class="work" data-kind="photo">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/outdoor-sao-joao-saj.webp">
+                <i class="work__glow"></i><img src="assets/trabalhos/outdoor-sao-joao-saj.webp" alt="Outdoor de São João de Santo Antônio de Jesus em painel de rua" width="437" height="435" loading="lazy" /><i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>05</span><h3>São João de Santo Antônio de Jesus</h3><p>Mídia exterior</p></div>
+            </article>
+            <article class="work" data-kind="cutout">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/promo-natal-dos-sonhos.webp">
+                <i class="work__glow"></i><img src="assets/trabalhos/promo-natal-dos-sonhos.webp" alt="Selo da campanha Super Natal dos Sonhos — Santo Antônio de Jesus" width="665" height="741" loading="lazy" /><i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>06</span><h3>Super Natal dos Sonhos</h3><p>Promoção</p></div>
+            </article>
+            <article class="work work--wide" data-kind="cutout">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/outdoor-dia-dos-pais.webp">
+                <i class="work__glow"></i><img src="assets/trabalhos/outdoor-dia-dos-pais.webp" alt="Outdoor Dia dos Pais: Seu pai merece um super presente — Comercial São Luís" width="1019" height="344" loading="lazy" /><i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>07</span><h3>Super Pai, Super Presente</h3><p>Outdoor · Comercial São Luís</p></div>
+            </article>
+            <article class="work work--tv" data-kind="tv">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/vt-max-forte.webp">
+                <i class="work__glow"></i>
+                <span class="work__tv">
+                  <img class="work__tv-frame" src="assets/trabalhos/vt-max-forte.webp" alt="Cena do VT do Grupo Max Forte" width="476" height="290" loading="lazy" />
+                  <img class="work__tv-body" src="assets/img/tv.webp" alt="" width="670" height="515" loading="lazy" />
+                </span>
+                <i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>08</span><h3>Grupo Max Forte</h3><p>VT · Roteiro e direção</p></div>
+            </article>
+            <article class="work" data-kind="photo">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/card-dia-das-criancas.webp">
+                <i class="work__glow"></i><img src="assets/trabalhos/card-dia-das-criancas.webp" alt="Card de redes sociais: Aqui, o Dia das Crianças é pura diversão" width="392" height="392" loading="lazy" /><i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>09</span><h3>Dia das Crianças</h3><p>Redes sociais</p></div>
+            </article>
+            <article class="work" data-kind="cutout">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/mascote-ovelha.webp">
+                <i class="work__glow"></i><img src="assets/trabalhos/mascote-ovelha.webp" alt="Mascote 3D: ovelha com coroa de flores" width="551" height="516" loading="lazy" /><i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>10</span><h3>Ovelhinha</h3><p>Mascote</p></div>
+            </article>
+            <article class="work" data-kind="cutout">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/promo-dia-das-criancas.webp">
+                <i class="work__glow"></i><img src="assets/trabalhos/promo-dia-das-criancas.webp" alt="Selo da campanha Dia das Crianças Palácio" width="583" height="548" loading="lazy" /><i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>11</span><h3>Dia das Crianças Palácio</h3><p>Promoção</p></div>
+            </article>
+            <article class="work work--tall" data-kind="cutout">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/encarte-mes-dos-pais.webp">
+                <i class="work__glow"></i><img src="assets/trabalhos/encarte-mes-dos-pais.webp" alt="Encarte Mês dos Pais — Hiper Unimar" width="530" height="756" loading="lazy" /><i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>12</span><h3>Mês dos Pais</h3><p>Encarte · Hiper Unimar</p></div>
+            </article>
+            <article class="work" data-kind="cutout">
+              <button class="work__media" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/mascote-personagem.webp">
+                <i class="work__glow"></i><img src="assets/trabalhos/mascote-personagem.webp" alt="Mascote 3D: personagem feminina de camisa amarela, de braços abertos" width="841" height="861" loading="lazy" /><i class="work__shadow"></i>
+              </button>
+              <div class="work__meta"><span>13</span><h3>Personagem 3D</h3><p>Mascote</p></div>
+            </article>
+            <div class="works__end">
+              <p>Quer ver mais?</p>
+              <a class="btn btn--yellow" href="https://www.instagram.com/agenciatnt/" target="_blank" rel="noopener"><span>@agenciatnt no Instagram</span><i class="btn__arrow" aria-hidden="true">↗</i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVIÇOS ==================== -->
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="sec-head"><span class="sec-head__n">(03)</span><span>O que fazemos</span><i></i></div>
+        <div class="services__top">
+          <h2 class="services__title" data-explode><span class="hl">Uma agência 360°.</span> Todas as mídias são essenciais.</h2>
+          <div class="services__side">
+            <p class="services__lead">Defensores da comunicação integrada, criamos campanhas on e off. Seja qual for o formato, o objetivo é preencher todos os espaços e fixar nossos clientes na mente dos consumidores.</p>
+            <p class="services__tip"><i aria-hidden="true">+</i>Clique em um serviço para ver os trabalhos</p>
+          </div>
+        </div>
+        <ul class="srv">
+          <li class="srv__item">
+            <h3 class="srv__h"><button class="srv__row" type="button" aria-expanded="false" aria-controls="srv-1" data-cursor="Ver trabalhos"><span class="srv__n">01</span><span class="srv__name">Campanhas publicitárias</span><span class="srv__desc">Promoções, datas sazonais, lançamentos e institucionais — do conceito à execução.</span><i class="srv__plus" aria-hidden="true"></i></button></h3>
+            <div class="srv__panel" id="srv-1" role="region" hidden>
+              <div class="srv__inner">
+                <div class="srv__gallery">
+                  <button class="srv__work" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/promo-carrinho-cheio.webp" data-caption="Carrinho Cheio &amp; Carrão na Garagem — Promoção · Hiper Unimar"><img src="assets/trabalhos/promo-carrinho-cheio.webp" alt="Promoção Carrinho Cheio &amp; Carrão na Garagem" width="797" height="781" loading="lazy" /></button>
+                  <button class="srv__work" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/promo-natal-dos-sonhos.webp" data-caption="Super Natal dos Sonhos — Promoção"><img src="assets/trabalhos/promo-natal-dos-sonhos.webp" alt="Selo Super Natal dos Sonhos" width="665" height="741" loading="lazy" /></button>
+                  <button class="srv__work" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/promo-dia-das-criancas.webp" data-caption="Dia das Crianças Palácio — Promoção"><img src="assets/trabalhos/promo-dia-das-criancas.webp" alt="Selo Dia das Crianças Palácio" width="583" height="548" loading="lazy" /></button>
+                  <button class="srv__work srv__work--photo" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/outdoor-sao-joao-saj.webp" data-caption="São João de Santo Antônio de Jesus — Campanha em mídia exterior"><img src="assets/trabalhos/outdoor-sao-joao-saj.webp" alt="Outdoor do São João de Santo Antônio de Jesus" width="437" height="435" loading="lazy" /></button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="srv__item">
+            <h3 class="srv__h"><button class="srv__row" type="button" aria-expanded="false" aria-controls="srv-2" data-cursor="Ver trabalhos"><span class="srv__n">02</span><span class="srv__name">Marcas e identidade visual</span><span class="srv__desc">Nomes, logotipos e sistemas visuais que tornam a empresa reconhecível.</span><i class="srv__plus" aria-hidden="true"></i></button></h3>
+            <div class="srv__panel" id="srv-2" role="region" hidden>
+              <div class="srv__inner">
+                <div class="srv__gallery srv__gallery--logos">
+                  <span class="srv__logo"><img src="assets/marcas/rede-uniao.webp" alt="Rede União de Supermercados da Bahia" width="178" height="196" loading="lazy" /></span>
+                  <span class="srv__logo"><img src="assets/marcas/grupo-max-forte.webp" alt="Grupo Max Forte 25 anos" width="207" height="129" loading="lazy" /></span>
+                  <span class="srv__logo"><img src="assets/marcas/conecta.webp" alt="Conecta Gestão de Pessoas" width="203" height="141" loading="lazy" /></span>
+                  <span class="srv__logo"><img src="assets/marcas/mundo-foods.webp" alt="Mundo Foods" width="195" height="80" loading="lazy" /></span>
+                  <span class="srv__logo"><img src="assets/marcas/otorrinos-clinic.webp" alt="Otorrinos Clinic" width="184" height="155" loading="lazy" /></span>
+                  <span class="srv__logo"><img src="assets/marcas/colegio-navegantes.webp" alt="Colégio Navegantes" width="145" height="201" loading="lazy" /></span>
+                </div>
+                <a class="srv__more" href="#marcas">Ver todas as marcas criadas pela TNT ↓</a>
+              </div>
+            </div>
+          </li>
+          <li class="srv__item">
+            <h3 class="srv__h"><button class="srv__row" type="button" aria-expanded="false" aria-controls="srv-3" data-cursor="Ver trabalhos"><span class="srv__n">03</span><span class="srv__name">Redes sociais</span><span class="srv__desc">Posts, cards e conteúdo que acompanham as trends sem perder a identidade.</span><i class="srv__plus" aria-hidden="true"></i></button></h3>
+            <div class="srv__panel" id="srv-3" role="region" hidden>
+              <div class="srv__inner">
+                <div class="srv__gallery">
+                  <button class="srv__work srv__work--post" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/card-dia-das-criancas.webp" data-caption="Dia das Crianças — Redes sociais"><img src="assets/trabalhos/card-dia-das-criancas.webp" alt="Card Dia das Crianças" width="392" height="392" loading="lazy" /></button>
+                  <button class="srv__work srv__work--post" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/card-academia.webp" data-caption="Card para academia — Redes sociais"><img src="assets/trabalhos/card-academia.webp" alt="Card de redes sociais para academia" width="348" height="348" loading="lazy" /></button>
+                  <button class="srv__work srv__work--post" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/card-pizza.webp" data-caption="Card para pizzaria — Redes sociais"><img src="assets/trabalhos/card-pizza.webp" alt="Card de redes sociais para pizzaria" width="262" height="262" loading="lazy" /></button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="srv__item">
+            <h3 class="srv__h"><button class="srv__row" type="button" aria-expanded="false" aria-controls="srv-4" data-cursor="Ver trabalhos"><span class="srv__n">04</span><span class="srv__name">Vídeos e VTs</span><span class="srv__desc">Roteiro e direção de comerciais e institucionais para TV e internet.</span><i class="srv__plus" aria-hidden="true"></i></button></h3>
+            <div class="srv__panel" id="srv-4" role="region" hidden>
+              <div class="srv__inner">
+                <div class="srv__gallery">
+                  <button class="srv__work srv__work--tv" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/vt-max-forte.webp" data-caption="VT Grupo Max Forte — Roteiro e direção"><span class="srv__tv"><img class="srv__tv-frame" src="assets/trabalhos/vt-max-forte.webp" alt="Cena do VT do Grupo Max Forte" width="476" height="290" loading="lazy" /><img class="srv__tv-body" src="assets/img/tv.webp" alt="" width="670" height="515" loading="lazy" /></span></button>
+                  <button class="srv__work srv__work--tv" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/vt-shopping.webp" data-caption="VT para shopping — Roteiro e direção"><span class="srv__tv"><img class="srv__tv-frame" src="assets/trabalhos/vt-shopping.webp" alt="Cena de VT para shopping" width="588" height="350" loading="lazy" /><img class="srv__tv-body" src="assets/img/tv.webp" alt="" width="670" height="515" loading="lazy" /></span></button>
+                  <button class="srv__work srv__work--tv" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/vt-industria.webp" data-caption="VT institucional para indústria — Roteiro e direção"><span class="srv__tv"><img class="srv__tv-frame" src="assets/trabalhos/vt-industria.webp" alt="Cena de VT institucional para indústria" width="496" height="288" loading="lazy" /><img class="srv__tv-body" src="assets/img/tv.webp" alt="" width="670" height="515" loading="lazy" /></span></button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="srv__item">
+            <h3 class="srv__h"><button class="srv__row" type="button" aria-expanded="false" aria-controls="srv-5" data-cursor="Ver trabalhos"><span class="srv__n">05</span><span class="srv__name">Spots e jingles</span><span class="srv__desc">Áudio que gruda: trilhas, locuções e jingles compostos sob medida.</span><i class="srv__plus" aria-hidden="true"></i></button></h3>
+            <div class="srv__panel" id="srv-5" role="region" hidden>
+              <div class="srv__inner srv__inner--audio">
+                <div class="srv__onair">
+                  <img src="assets/img/radio.webp" alt="Rádio antigo" width="583" height="583" loading="lazy" />
+                  <span class="srv__eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+                <div class="srv__audio-copy">
+                  <p>Spots de 15″ e 30″, jingles autorais e locuções para rádio, TV, carro de som e redes. Peça uma demonstração e ouça como a sua marca pode soar.</p>
+                  <a class="btn btn--yellow" href="https://wa.me/557536324879?text=Ol%C3%A1%2C%20TNT!%20Quero%20ouvir%20spots%20e%20jingles%20de%20voc%C3%AAs." target="_blank" rel="noopener"><span>Pedir demonstração</span><i class="btn__arrow" aria-hidden="true">↗</i></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="srv__item">
+            <h3 class="srv__h"><button class="srv__row" type="button" aria-expanded="false" aria-controls="srv-6" data-cursor="Ver trabalhos"><span class="srv__n">06</span><span class="srv__name">Outdoor e mídia exterior</span><span class="srv__desc">Peças que chamam atenção a metros de distância e em poucos segundos.</span><i class="srv__plus" aria-hidden="true"></i></button></h3>
+            <div class="srv__panel" id="srv-6" role="region" hidden>
+              <div class="srv__inner">
+                <div class="srv__gallery">
+                  <button class="srv__work srv__work--wide" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/outdoor-max-forte.webp" data-caption="Max Forte · 25 anos — Outdoor"><img src="assets/trabalhos/outdoor-max-forte.webp" alt="Outdoor Grupo Max Forte" width="998" height="509" loading="lazy" /></button>
+                  <button class="srv__work srv__work--wide" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/outdoor-dia-dos-pais.webp" data-caption="Super Pai, Super Presente — Outdoor · Comercial São Luís"><img src="assets/trabalhos/outdoor-dia-dos-pais.webp" alt="Outdoor Dia dos Pais" width="1019" height="344" loading="lazy" /></button>
+                  <button class="srv__work srv__work--photo" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/outdoor-sao-joao-saj.webp" data-caption="São João de Santo Antônio de Jesus — Mídia exterior"><img src="assets/trabalhos/outdoor-sao-joao-saj.webp" alt="Outdoor do São João de Santo Antônio de Jesus" width="437" height="435" loading="lazy" /></button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="srv__item">
+            <h3 class="srv__h"><button class="srv__row" type="button" aria-expanded="false" aria-controls="srv-7" data-cursor="Ver trabalhos"><span class="srv__n">07</span><span class="srv__name">Encartes e ponto de venda</span><span class="srv__desc">Ofertas organizadas para vender na loja, no folheto e no WhatsApp.</span><i class="srv__plus" aria-hidden="true"></i></button></h3>
+            <div class="srv__panel" id="srv-7" role="region" hidden>
+              <div class="srv__inner">
+                <div class="srv__gallery">
+                  <button class="srv__work srv__work--tall" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/encarte-sao-joao.webp" data-caption="São João de Ofertas — Encarte · Hiper Unimar"><img src="assets/trabalhos/encarte-sao-joao.webp" alt="Encarte São João" width="561" height="801" loading="lazy" /></button>
+                  <button class="srv__work srv__work--tall" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/encarte-mes-dos-pais.webp" data-caption="Mês dos Pais — Encarte · Hiper Unimar"><img src="assets/trabalhos/encarte-mes-dos-pais.webp" alt="Encarte Mês dos Pais" width="530" height="756" loading="lazy" /></button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="srv__item">
+            <h3 class="srv__h"><button class="srv__row" type="button" aria-expanded="false" aria-controls="srv-8" data-cursor="Ver trabalhos"><span class="srv__n">08</span><span class="srv__name">Mascotes e personagens</span><span class="srv__desc">Personagens 3D que dão rosto, voz e carisma à marca.</span><i class="srv__plus" aria-hidden="true"></i></button></h3>
+            <div class="srv__panel" id="srv-8" role="region" hidden>
+              <div class="srv__inner">
+                <div class="srv__gallery">
+                  <button class="srv__work srv__work--tall" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/mascote-chef.webp" data-caption="Padeiro 3D — Mascote"><img src="assets/trabalhos/mascote-chef.webp" alt="Mascote padeiro 3D" width="672" height="810" loading="lazy" /></button>
+                  <button class="srv__work" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/mascote-personagem.webp" data-caption="Personagem 3D — Mascote"><img src="assets/trabalhos/mascote-personagem.webp" alt="Personagem 3D feminina" width="841" height="861" loading="lazy" /></button>
+                  <button class="srv__work" type="button" data-cursor="Ampliar" data-full="assets/trabalhos/mascote-ovelha.webp" data-caption="Ovelhinha — Mascote"><img src="assets/trabalhos/mascote-ovelha.webp" alt="Mascote ovelha 3D" width="551" height="516" loading="lazy" /></button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==================== MARCAS ==================== -->
+    <section class="brands" id="marcas">
+      <div class="container">
+        <div class="sec-head sec-head--dark"><span class="sec-head__n">(04)</span><span>Marcas criadas pela TNT</span><i></i></div>
+        <div class="brands__top">
+          <h2 class="title title--dark" data-explode>Identidades que nasceram aqui.</h2>
+          <p>Da saúde ao varejo, da indústria ao comércio: algumas das marcas que a TNT desenhou para clientes de diferentes segmentos.</p>
+        </div>
+        <ul class="brands__grid">
+          <li><img src="assets/marcas/rede-uniao.webp" alt="Rede União de Supermercados da Bahia" width="178" height="196" loading="lazy" /></li>
+          <li><img src="assets/marcas/conecta.webp" alt="Conecta Gestão de Pessoas" width="203" height="141" loading="lazy" /></li>
+          <li><img src="assets/marcas/grupo-max-forte.webp" alt="Grupo Max Forte 25 anos" width="207" height="129" loading="lazy" /></li>
+          <li><img src="assets/marcas/reserva-imperial.webp" alt="Condomínio Reserva Imperial" width="191" height="130" loading="lazy" /></li>
+          <li><img src="assets/marcas/mundo-foods.webp" alt="Mundo Foods" width="195" height="80" loading="lazy" /></li>
+          <li><img src="assets/marcas/ortocentro.webp" alt="Ortocentro Ortopedia" width="182" height="147" loading="lazy" /></li>
+          <li><img src="assets/marcas/espaco-do-mei.webp" alt="Espaço do MEI" width="136" height="211" loading="lazy" /></li>
+          <li><img src="assets/marcas/sete.webp" alt="Sete Construtora e Incorporadora" width="202" height="144" loading="lazy" /></li>
+          <li><img src="assets/marcas/colegio-navegantes.webp" alt="Colégio Navegantes" width="145" height="201" loading="lazy" /></li>
+          <li><img src="assets/marcas/otorrinos-clinic.webp" alt="Otorrinos Clinic" width="184" height="155" loading="lazy" /></li>
+          <li><img src="assets/marcas/implo.webp" alt="Implo Implantes Dentários" width="196" height="66" loading="lazy" /></li>
+          <li><img src="assets/marcas/espaco-empresarial.webp" alt="Espaço Empresarial" width="127" height="201" loading="lazy" /></li>
+          <li><img src="assets/marcas/cidade-jardim.webp" alt="Cidade Jardim Residencial" width="210" height="149" loading="lazy" /></li>
+          <li><img src="assets/marcas/bca-adv.webp" alt="BCA Advocacia" width="204" height="91" loading="lazy" /></li>
+          <li><img src="assets/marcas/vertex.webp" alt="Vertex" width="211" height="54" loading="lazy" /></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==================== MÉTODO ==================== -->
+    <section class="method" id="metodo">
+      <div class="container">
+        <div class="sec-head"><span class="sec-head__n">(05)</span><span>Nosso jeito de fazer propaganda</span><i></i></div>
+        <p class="method__intro" data-lines>Cada briefing é ouvido de perto e transformado em ideias que nascem do contato direto com o cliente. O método é simples, mas certeiro:</p>
+        <p class="method__hint" aria-hidden="true"><i></i>Passe o mouse por cada etapa</p>
+        <ol class="method__list">
+          <li class="mstep">
+            <span class="mstep__n">01</span>
+            <h3 class="mstep__word" data-word="Ouvir.">Ouvir.</h3>
+            <p>Mergulhamos no negócio, no público e no momento do cliente. Toda grande ideia começa com uma boa escuta.</p>
+          </li>
+          <li class="mstep">
+            <span class="mstep__n">02</span>
+            <h3 class="mstep__word" data-word="Rabiscar.">Rabiscar.</h3>
+            <p>Conceitos, frases, frames e melodias no papel. É no rascunho que a ideia ganha forma e direção.</p>
+          </li>
+          <li class="mstep">
+            <span class="mstep__n">03</span>
+            <h3 class="mstep__word" data-word="Criar.">Criar.</h3>
+            <p>Campanhas que falam a língua do consumidor e marcas inesquecíveis, prontas para todos os meios.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==================== SALVADOR ==================== -->
+    <section class="city" id="salvador">
+      <div class="city__media duotone">
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/img/salvador-farol-900.webp" />
+          <img src="assets/img/salvador-farol-1700.webp" alt="Farol da Barra, em Salvador" width="1694" height="1080" loading="lazy" />
+        </picture>
+        <svg class="balao city__ring" viewBox="-5 -5 110 110" aria-hidden="true"><path d="M0 100V50A50 50 0 0 1 50 0A50 50 0 0 1 100 50A50 50 0 0 1 50 100Z" /></svg>
+        <div class="city__target" aria-hidden="true"><i></i><span>Farol da Barra</span></div>
+      </div>
+      <div class="city__hud" aria-hidden="true">
+        <i class="hud-corner hud-corner--tl"></i><i class="hud-corner hud-corner--tr"></i><i class="hud-corner hud-corner--bl"></i><i class="hud-corner hud-corner--br"></i>
+        <div class="city__scan"><i></i></div>
+        <p class="city__readout"><span>Salvador · Bahia · Brasil</span><span>12°58′S · 38°30′O</span><span>Agora <b class="js-clock">--:--:--</b></span></p>
+      </div>
+      <div class="container city__inner">
+        <div class="sec-head"><span class="sec-head__n">(06)</span><span>Salvador · Bahia</span><i></i></div>
+        <h2 class="city__title" data-explode>Inspirados por uma cidade que transpira cultura e <span class="hl">pulsa criatividade.</span></h2>
+        <div class="city__cols">
+          <p>Enxergamos frames, jingles, slogans e histórias em cada esquina de Salvador. E como criatividade não tem hora marcada, trabalhamos num modelo moderno e flexível: parte da equipe em home office, com as mentes criativas sempre acesas, disponíveis e conectadas.</p>
+          <ul class="city__clock">
+            <li><b>24</b><span>horas por dia</span></li>
+            <li><b>7</b><span>dias por semana</span></li>
+            <li><b>365</b><span>dias por ano</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== O QUE CABE EM 30 SEGUNDOS (estúdio de áudio) ==================== -->
+    <section class="spot" id="spot" aria-labelledby="spot-title">
+      <div class="spot__pin">
+        <div class="container spot__grid">
+          <div class="spot__left">
+            <div class="sec-head"><span class="sec-head__n">(07)</span><span>Publicidade na prática</span><i></i></div>
+            <h2 class="title" id="spot-title" data-explode>O que cabe em <span class="hl">30 segundos</span>?</h2>
+            <p class="spot__lead">Role e acompanhe a edição de um spot: cada segundo tem uma função.</p>
+            <ol class="spot__phases">
+              <li data-from="0"><b>00—05″</b><strong>Gancho</strong><span>O primeiro segundo decide se o público fica. Um som, uma pergunta, uma imagem que faz parar.</span></li>
+              <li data-from="5"><b>05—15″</b><strong>Mensagem</strong><span>Uma ideia só, dita com clareza: o que a marca oferece e por que isso importa.</span></li>
+              <li data-from="15"><b>15—25″</b><strong>Emoção</strong><span>Trilha, jingle, humor ou história: é a emoção que faz a mensagem ser lembrada.</span></li>
+              <li data-from="25"><b>25—30″</b><strong>Assinatura</strong><span>Marca, chamada para ação e contato. Quem ouviu precisa saber o que fazer agora.</span></li>
+            </ol>
+          </div>
+
+          <div class="studio" aria-hidden="true">
+            <div class="studio__rig">
+              <div class="studio__console">
+                <div class="studio__top">
+                  <span class="studio__onair"><i></i>No ar</span>
+                  <span class="studio__file">SPOT_TNT_30s.wav · 48 kHz</span>
+                  <span class="studio__time">00:<b>00</b><small>/ 00:30</small></span>
+                </div>
+                <div class="studio__daw">
+                  <div class="studio__ruler"><span style="--x:0">0″</span><span style="--x:.1667">5″</span><span style="--x:.3333">10″</span><span style="--x:.5">15″</span><span style="--x:.6667">20″</span><span style="--x:.8333">25″</span><span style="--x:1">30″</span></div>
+                  <div class="studio__zones"><i style="--a:0;--b:.1667"><b>Gancho</b></i><i style="--a:.1667;--b:.5"><b>Mensagem</b></i><i style="--a:.5;--b:.8333"><b>Emoção</b></i><i style="--a:.8333;--b:1"><b>Assinatura</b></i></div>
+                  <div class="studio__tracks">
+                    <div class="track"><span class="track__name">Locução</span><div class="track__lane"><canvas data-track="voz"></canvas></div></div>
+                    <div class="track"><span class="track__name">Trilha</span><div class="track__lane"><canvas data-track="trilha"></canvas></div></div>
+                    <div class="track"><span class="track__name">Efeitos</span><div class="track__lane"><canvas data-track="efeitos"></canvas></div></div>
+                    <i class="studio__playhead"></i>
+                  </div>
+                </div>
+                <div class="studio__bottom">
+                  <span class="studio__phase">Gancho</span>
+                  <div class="studio__vu"><i class="vu"><b></b></i><i class="vu"><b></b></i></div>
+                  <span class="studio__db">−∞ dB</span>
+                </div>
+              </div>
+              <div class="studio__radio">
+                <div class="studio__waves"><i></i><i></i><i></i></div>
+                <img src="assets/img/radio.webp" alt="" width="583" height="583" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INSIGHTS ==================== -->
+    <section class="insights" id="insights">
+      <div class="container">
+        <div class="sec-head sec-head--dark"><span class="sec-head__n">(08)</span><span>Publicidade &amp; Marketing</span><i></i></div>
+        <div class="insights__grid">
+          <div class="insights__aside">
+            <h2 class="title title--dark" data-explode>Por que comunicar bem muda o jogo.</h2>
+            <p>Princípios que guiam cada campanha que sai daqui — e que valem para qualquer empresa que quer crescer.</p>
+            <figure class="lit">
+              <div class="lit__stage" role="button" tabindex="0" aria-pressed="true" aria-label="Lâmpada da marca TNT: clique para apagar ou acender" data-cursor="Apagar">
+                <i class="lit__halo"></i>
+                <i class="lit__dust"></i>
+                <div class="lit__bulb">
+                  <i class="lit__core"></i>
+                  <img class="lit__part lit__body" src="assets/brand/lampada/lampada-corpo.png" alt="" width="675" height="930" loading="lazy" style="left:8.242%;top:18.559%;width:74.176%" />
+                  <img class="lit__part lit__ray" src="assets/brand/lampada/lampada-raio-1.png" alt="" width="160" height="140" loading="lazy" style="left:0.275%;top:13.974%;width:17.582%" />
+                  <img class="lit__part lit__ray" src="assets/brand/lampada/lampada-raio-2.png" alt="" width="97" height="155" loading="lazy" style="left:24.176%;top:4.148%;width:10.714%" />
+                  <img class="lit__part lit__ray" src="assets/brand/lampada/lampada-raio-3.png" alt="" width="85" height="185" loading="lazy" style="left:48.077%;top:0.218%;width:9.341%" />
+                  <img class="lit__part lit__ray" src="assets/brand/lampada/lampada-raio-4.png" alt="" width="125" height="140" loading="lazy" style="left:67.033%;top:10.044%;width:13.736%" />
+                  <img class="lit__part lit__ray" src="assets/brand/lampada/lampada-raio-5.png" alt="" width="177" height="112" loading="lazy" style="left:80.22%;top:24.891%;width:19.505%" />
+                </div>
+              </div>
+              <figcaption><span>TNT</span>Toda campanha começa com uma ideia acesa.<em class="lit__tip">clique na lâmpada</em></figcaption>
+            </figure>
+          </div>
+          <ol class="tips">
+            <li class="tip"><span class="tip__n">01</span><div><h3>Sua empresa aparece. Mas é lembrada?</h3><p>Ser visto é fácil; ser escolhido exige estratégia. Na hora da compra, o consumidor recorre às marcas que estão na cabeça dele — e é a presença constante que coloca a sua nessa lista.</p></div></li>
+            <li class="tip"><span class="tip__n">02</span><div><h3>Um recado, vários caminhos.</h3><p>Rádio, TV, outdoor, redes sociais e ponto de venda contando a mesma história reforçam a mensagem a cada contato — e cada meio ajuda o outro.</p></div></li>
+            <li class="tip"><span class="tip__n">03</span><div><h3>Consistência gera confiança.</h3><p>Cores, tipografia, tom de voz e mascote repetidos com coerência fazem a marca ser reconhecida antes mesmo de o nome aparecer.</p></div></li>
+            <li class="tip"><span class="tip__n">04</span><div><h3>Jingle bom não sai da cabeça.</h3><p>Som cria memória. Um spot bem escrito ou um jingle marcante acompanha o consumidor no carro, em casa e no celular.</p></div></li>
+            <li class="tip"><span class="tip__n">05</span><div><h3>Todo mundo vê o post. Poucos enxergam o que existe por trás dele.</h3><p>Briefing, estratégia, roteiro, produção, design e legenda: cada publicação que funciona é resultado de processo — não de sorte.</p></div></li>
+            <li class="tip"><span class="tip__n">06</span><div><h3>Planejamento antecipa vendas.</h3><p>Natal, Dia das Mães, Dia das Crianças, São João, aniversário da loja: campanhas planejadas com antecedência aproveitam o pico de procura.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTATO ==================== -->
+    <section class="contact" id="contato">
+      <div class="container">
+        <div class="sec-head"><span class="sec-head__n">(09)</span><span>Contato</span><i></i></div>
+        <h2 class="contact__title" data-explode>Vamos criar a próxima <span class="hl">campanha?</span></h2>
+        <div class="contact__orb" aria-hidden="true">
+          <canvas class="contact__globe" data-cursor="Girar"></canvas>
+          <p class="contact__geo"><span>Salvador · BA</span><span>→ o mundo</span></p>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__info">
+            <p class="contact__lead">Dia ou noite, online ou offline, em Salvador ou em qualquer lugar do mundo. Vem trocar ideia com a gente!</p>
+            <a class="contact__whats" href="https://wa.me/557536324879" target="_blank" rel="noopener" data-cursor="Conversar">
+              <span>WhatsApp · Telefone</span><b>(75) 3632-4879</b><i aria-hidden="true">↗</i>
+            </a>
+            <dl class="contact__list">
+              <div><dt>Endereço</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Professor+Manoel+Ribeiro,+1301,+Stiep,+Salvador+-+BA" target="_blank" rel="noopener">Av. Professor Manoel Ribeiro, 1301<br />Stiep — Salvador / Bahia</a></dd></div>
+              <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/agenciatnt/" target="_blank" rel="noopener">@agenciatnt</a></dd></div>
+              <div><dt>LinkedIn</dt><dd><a href="https://br.linkedin.com/company/tnt-propaganda" target="_blank" rel="noopener">TNT Propaganda</a></dd></div>
+            </dl>
+          </div>
+          <form class="form" id="form-contato">
+            <p class="form__title">Conte sua ideia</p>
+            <p class="form__hint">Ao enviar, abrimos o WhatsApp com a sua mensagem pronta.</p>
+            <label class="field"><input name="nome" required autocomplete="name" placeholder=" " /><span>Seu nome</span></label>
+            <label class="field"><input name="empresa" autocomplete="organization" placeholder=" " /><span>Empresa</span></label>
+            <fieldset class="chips">
+              <legend>O que você precisa?</legend>
+              <label><input type="radio" name="servico" value="Campanha publicitária" checked /><span>Campanha</span></label>
+              <label><input type="radio" name="servico" value="Marca / identidade visual" /><span>Marca</span></label>
+              <label><input type="radio" name="servico" value="Redes sociais" /><span>Redes sociais</span></label>
+              <label><input type="radio" name="servico" value="Vídeo / VT" /><span>Vídeo / VT</span></label>
+              <label><input type="radio" name="servico" value="Spot ou jingle" /><span>Spot / jingle</span></label>
+              <label><input type="radio" name="servico" value="Outdoor / impressos" /><span>Outdoor / impressos</span></label>
+            </fieldset>
+            <label class="field field--area"><textarea name="mensagem" rows="3" placeholder=" "></textarea><span>Mensagem</span></label>
+            <!-- Prévia ao vivo: a mensagem que vai chegar no WhatsApp da TNT -->
+            <div class="wa" aria-hidden="true">
+              <div class="wa__head"><span class="wa__avatar"><img src="assets/brand/logo-tnt-branco.png" alt="" width="633" height="517" loading="lazy" /></span><b>TNT Propaganda</b><small class="wa__status">online</small></div>
+              <div class="wa__body"><p class="wa__msg"><span class="wa__text"></span><span class="wa__time">agora <i>✓✓</i></span></p></div>
+            </div>
+            <button class="btn btn--yellow btn--block form__send" type="submit"><span>Enviar pelo WhatsApp</span><i class="btn__arrow" aria-hidden="true">→</i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__marquee" aria-hidden="true">
+      <div class="footer__row"><span>Criatividade gera Criatividade</span><i>✦</i><span>Criatividade gera Criatividade</span><i>✦</i><span>Criatividade gera Criatividade</span><i>✦</i><span>Criatividade gera Criatividade</span><i>✦</i></div>
+    </div>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/brand/logo-tnt-branco.png" alt="TNT Propaganda" width="633" height="517" loading="lazy" />
+        <p>Agência 360° em Salvador há mais de 15 anos. Aqui, as ideias nunca dormem.</p>
+      </div>
+      <nav class="footer__col" aria-label="Rodapé">
+        <p>Navegação</p>
+        <a href="#trabalhos">Trabalhos</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#insights">Insights</a><a href="#contato">Contato</a>
+      </nav>
+      <div class="footer__col">
+        <p>Contato</p>
+        <a href="https://wa.me/557536324879" target="_blank" rel="noopener">(75) 3632-4879</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Professor+Manoel+Ribeiro,+1301,+Stiep,+Salvador+-+BA" target="_blank" rel="noopener">Av. Prof. Manoel Ribeiro, 1301 · Stiep</a>
+      </div>
+      <div class="footer__col">
+        <p>Redes</p>
+        <a href="https://www.instagram.com/agenciatnt/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://br.linkedin.com/company/tnt-propaganda" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span class="year">2026</span> TNT Propaganda · Salvador, Bahia</span>
+      <a href="#inicio" class="footer__top">Voltar ao topo ↑</a>
+    </div>
+    <p class="container footer__credits">Foto do Elevador Lacerda à noite: <a href="https://commons.wikimedia.org/wiki/File:Vista_Noturna_do_Elevador_Lacerda.JPG" target="_blank" rel="noopener">Ferreiraandreza / Wikimedia Commons</a>, licença <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" target="_blank" rel="noopener">CC BY-SA 4.0</a> (recortada e com tratamento de cor).</p>
+  </footer>
+
+  <a class="whats" href="https://wa.me/557536324879" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.5-.4z" /></svg>
+  </a>
+
+  <div class="lightbox" hidden>
+    <button class="lightbox__close" type="button" aria-label="Fechar">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Anterior">←</button>
+    <figure><img alt="" /><figcaption></figcaption></figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Próximo">→</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="tech.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
